@@ -1,0 +1,19 @@
+{
+  "name": "claude-code-mode",
+  "module": "app.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run dist/app",
+    "dev": "bun run --watch app.ts",
+    "demo": "bun run run-demo.ts",
+    "test": "TEST=1 bun test ./tests",
+    "build": "bun build app.ts --outfile dist/app --target=bun"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
